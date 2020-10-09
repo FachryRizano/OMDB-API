@@ -1,38 +1,39 @@
-class Movie:
+import json
+class Movies:
     def __init__(self, title, year, imdbID, type, poster):
-        self.__title = title
-        self.__year = year
-        self.__imdbID = imdbID
-        self.__type = type
-        self.__poster = poster
+        self.__title = str(title)
+        self.__year = str(year)
+        self.__imdbID = str(imdbID)
+        self.__type = str(type)
+        self.__poster = str(poster)
 
-    def get__title(self):
+    def getTitle(self):
         return self.__title
     
-    def get__year(self):
+    def getYear(self):
         return self.__year
     
-    def get__imdbID(self):
-        return self.__year
+    def getImdbID(self):
+        return self.__imdbID
 
-    def get__type(self):
+    def getType(self):
         return self.__type
 
-    def get__poster(self):
+    def getPoster(self):
         return self.__poster
     
-    def set__title(self,title):
-        self.__title = title
+    def setTitle(self,title):
+        self.title = title
     
-    def set__year(self,year):
-        self.__year = year
+    def setYear(self,year):
+        self.year = year
 
-    def set__imdbID(self,imdbID):
-        self.__imdbID = imdbID
+    def setImdbID(self,imdbID):
+        self.imdbID = imdbID
 
-    def set__type(self,type):
-        self.__type = type
-        
-    def set__poster(self,poster):
-        self.__poster = poster
+    def setType(self,type):
+        self.type = type
+
+    def setPoster(self,poster):
+        self.poster = poster
     
